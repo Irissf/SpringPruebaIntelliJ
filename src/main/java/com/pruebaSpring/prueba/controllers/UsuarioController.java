@@ -19,17 +19,15 @@ public class UsuarioController {
     }
 
     @RequestMapping(value = "usuario/editar") // localhost:8080/prueba
-    public Usuario editarUsuario(){
-        Usuario user = new Usuario(1l,"Iris","sf,","iris@gmail.com"
-                ,"123456789","aaaaaaa");
-        return user;
+    public String editarUsuario(){
+
+        return "user";
     }
 
     @RequestMapping(value = "usuario/eliminar") // localhost:8080/prueba
-    public Usuario eliminarUsuario(){
-        Usuario user = new Usuario(1l,"Iris","sf,","iris@gmail.com"
-                ,"123456789","aaaaaaa");
-        return user;
+    public String eliminarUsuario(){
+
+        return "user";
     }
 
     @RequestMapping(value = "usuario/{id}") // localhost:8080/prueba
